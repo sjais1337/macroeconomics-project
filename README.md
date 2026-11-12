@@ -1,29 +1,6 @@
 # Hormuz 2026: Energy Supply Shocks, Inflation Pass-Through, and Monetary Policy
 
 **ECO331 Project | IIT Kanpur | November 2026**
-
-This repository contains the empirical replication pipeline for our study of the macroeconomic transmission of the 2026 Strait of Hormuz closure. 
-
-We examine how the physical disruption of Gulf shipping and subsequent crude oil price surge passed through into consumer prices (headline, food, core, and energy), manufacturing production, and central bank policy rates across 40 economies.
-
----
-
-## Empirical Strategy & Key Findings
-
-1. **Pre-War Exposure Margin**: We construct pre-war dependence on Persian Gulf energy imports as a share of GDP (2023–2025 UN Comtrade imports divided by World Bank GDP). Exposure is substantially higher in Asia (median: 2.18% of GDP) than in Europe (median: 0.13%). The sample median (0.37%) defines the high- and low-exposure comparison groups.
-2. **Difference-in-Differences (DiD)**: Comparing average inflation in the pre-war year (March 2025–February 2026) with the war period (March–October 2026):
-   - **Headline CPI**: +1.87 pp in high-exposure economies vs. −0.04 pp in low-exposure economies (DiD: **+1.91 pp**, $p = 0.001$).
-   - **Food CPI**: DiD of **+1.86 pp** ($p = 0.033$), reflecting higher freight and fertilizer input costs.
-   - **Core CPI**: DiD of **+0.80 pp** ($p = 0.034$), indicating second-round pass-through into non-energy goods and services.
-   - **Energy CPI**: Little differential pass-through (+0.84 pp, $p = 0.731$) as Asian governments capped retail fuel prices and absorbed costs fiscally.
-3. **2SLS Instrumental Variables**: To isolate supply-driven oil price movements from world demand fluctuations, we instrument the interaction $\Delta_{12}\ln \text{Brent}_t \times \text{Exposure}_i$ with satellite AIS tanker transit shortfalls from IMF PortWatch ($\text{Shortfall}_t \times \text{Exposure}_i$), with two-way country and month fixed effects:
-   - 2SLS headline pass-through is **1.75** (SE 0.66) compared to OLS **1.42** (SE 0.55).
-   - Food pass-through is highest at **2.52** (SE 1.03), while energy CPI is statistically insignificant (**−2.05**).
-4. **Real Output**: Using UNIDO's Index of Industrial Production (IIP), manufacturing output had not contracted by August/September 2026. Growth in exposed economies remained near 4–5%, supported by fuel price subsidies and a global semiconductor export boom.
-5. **Monetary Policy Benchmark**: Evaluating central bank policy rates against the textbook Taylor rule ($\Delta i^* = 1.5 \Delta \pi + 0.5 \Delta \tilde{y}$):
-   - **14 of 19** central banks adjusted rates by less than the headline Taylor rule (median actual change: 0.0 pp vs. prescribed +2.53 pp).
-   - Central banks broadly looked through the imported supply shock, maintaining interest rate smoothing and tracking core inflation benchmarks more closely.
-
 ---
 
 ## Repository Structure
